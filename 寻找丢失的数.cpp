@@ -1,22 +1,24 @@
 #include<stdio.h>
-int main()
+main()
 {
-    int m;
-    scanf("%d",&m);
-    int i;
-    for(i=0;i<m;i++)
-    {
-        int lost_num=0;
-        int j=0;
-        int input;
-        while(1)
-        {
-            scanf("%d",&input);
-            lost_num^=++j;
-            if(input==0) break;
-            lost_num^=input;
-        }
-        printf("%d\n",lost_num);
-    }
-    return 0;
+ int n,sum,a,j,s;
+ scanf("%d",&n);
+ while(n>0)
+ {
+  sum=0;
+  j=0;
+  s=0;
+  while(1)
+  {
+   scanf("%d",&a);
+   sum+=a;
+   j++;
+   s+=j;
+   if(a==0)
+    break;
+  }
+  s-=sum;
+  printf("%d\n",s);
+  n--;
+ } 
 }
