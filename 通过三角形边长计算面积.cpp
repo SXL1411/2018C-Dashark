@@ -5,7 +5,7 @@ int max(int a,int b) {
 	return a>b?a:b;
 }
 int main() {
-	scanf("%d",&T);
+	scanf("%d",&T);    //T×éÊý¾Ý 
 	while(T--) {
 		scanf("%d%d%d",&a,&b,&c);
 		int M = max(a,b);
